@@ -4,12 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
-
-    <title>SOLID - Bootstrap 3 Theme</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    
+    <title>Equipos Hidráulicos</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <a href="header.php"></a>
 
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">

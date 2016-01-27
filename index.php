@@ -1,9 +1,9 @@
 <html lang="en">
-    
-        <?php include_once 'templates/head.php';?>
+
+    <?php include_once 'templates/head.php'; ?>
     <body>
-        
-        <?php include_once 'templates/header.php';?>
+
+        <?php include_once 'templates/header.php'; ?>
         <!-- Fixed navbar -->
 
 
@@ -16,7 +16,7 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <h1>EQUIPOS HIDRÁULICOS SAS.</h1>
                         <h3>Técnicos Profesionales En Bombas Hidraulicas De Agua Potable y Aguas LLuvia</h3>
-				
+
                     </div>
                     <div class="col-lg-8 col-lg-offset-2 himg">
                         <img src="assets/img/browser.png" class="img-responsive">
@@ -273,7 +273,7 @@
         <!-- *****************************************************************************************************************
          FOOTER
          ***************************************************************************************************************** -->
-            <?php include_once 'templates/footer.php';?>
+        <?php include_once 'templates/footer.php'; ?>
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
@@ -289,7 +289,7 @@
 
 
         <script>
-    // Portfolio
+            // Portfolio
             (function ($) {
                 "use strict";
                 var $container = $('.portfolio'),
@@ -370,5 +370,6 @@
                 });
             })(jQuery);
         </script>
+        
     </body>
 </html>
