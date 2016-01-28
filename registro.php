@@ -32,21 +32,21 @@
                         </div>
                         <div class="panel-body">
                             <br>
-                            <form role="form">
+                            <form role="form" action="controller/sesion_controller.php" method="POST">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="inputNombre" required="" placeholder="* Nombres">
+                                    <input type="text" class="form-control" name="inputNombre" id="inputNombre" required="" placeholder="* Nombres">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="inputEmail" required="" placeholder="* Correo Electrónico">
+                                    <input type="email" class="form-control" name="inputEmail" id="inputEmail" required="" placeholder="* Correo Electrónico">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="inputEdificio"  placeholder="Edificio o Direccion (opcional)">
+                                    <input type="text" class="form-control" name="inputEdificio" id="inputEdificio"  placeholder="Edificio o Direccion (opcional)">
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" class="form-control" id="inputTelefono" required="" placeholder="* Teléfono Fijo o Celular">
+                                    <input type="number" class="form-control" name="inputTelefono" id="inputTelefono" required="" placeholder="* Teléfono Fijo o Celular">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="inputPassword" required="" placeholder="* Contraseña ">
+                                    <input type="password" class="form-control" name="inputPassword" id="inputPassword" required="" placeholder="* Contraseña ">
                                 </div>
                                 <div style="text-align: center">
                                     <button type="submit" class="btn btn-theme">Registrar</button>

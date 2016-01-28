@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -16,6 +17,8 @@
                 <li><a href="index.php">HOME</a></li>
                 <li><a href="quienes_somos.php">QUIENES SOMOS</a></li>
                 <li><a href="contactenos.php">CONTACTENOS</a></li>
+                <li><a href="login.php">INICIAR SESION</a></li>
+                <li><a href="registro.php">REGISTRARSE</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGINAS <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -25,13 +28,15 @@
                         <li><a href="single-project.html">SINGLE PROJECT</a></li>
                     </ul>
                 </li>
+                <?php if ($_SESSION['user'] != '') { ?>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">CLIENTES <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class='glyphicon glyphicon-user' aria-hidden='true'> 
+                        </span><?php echo("    ".$_SESSION['user']); ?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="login.php">INICIAR SESION</a></li>
-                        <li><a href="registro.php">REGISTRARSE</a></li>
+                        <li><a href="controller/session_destroy.php">Cerrar Sesion</a></li>
                     </ul>
                 </li>
+                <?php } ?>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

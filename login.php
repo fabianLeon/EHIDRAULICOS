@@ -32,13 +32,15 @@
                         </div>
                         <div class="panel-body">
                             <br>
-                            <form role="form">
+                            <form role="form" action="controller/session_start_controller.php" method="POST">
+                                <?php if (isset($_GET['e'])){?>
+                                <h5 class="ctitle" style="text-align: center">Usuario o Contraseña Invalidos</h5>
+                                <?php } ?>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="inputEmail" required="" placeholder="* Correo Electrónico">
+                                    <input type="email" class="form-control" name="inputEmail" id="inputEmail" required="" placeholder="* Correo Electrónico">
                                 </div>
-
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="inputPassword" required="" placeholder="* Contraseña ">
+                                    <input type="password" class="form-control" name="inputPassword" id="inputPassword" required="" placeholder="* Contraseña ">
                                 </div>
                                 <div style="text-align: center">
                                     <button type="submit" class="btn btn-theme">Iniciar Sesión</button>
