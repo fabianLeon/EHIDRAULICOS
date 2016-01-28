@@ -25,7 +25,7 @@
         <div class="container mtb">
             <div class="row">
                 <div class="col-lg-12">
-                    
+
                     <p>EQUIPOS HIDRAULICOS SAS, es una empresa legalmente constituida, que nació por iniciativa y finalidad para satisfacer las necesidades de nuestros clientes “Entidades públicas, privadas o particulares”  y se ha dedicado a crecer con un excelente servicio, calidad y cumplimiento con el trabajo.</p>
                     <p>Tras estudiar las prácticas desarrolladas al interior de la empresa, EQUIPOS HIDRAULICOS SAS, resalta la imagen de sus clientes en el funcionamiento de la presentación de sus servicios a un nivel óptimo y profesional. Como resultado de este trabajo EQUIPOS HIDRAULICOS SAS, ha establecido un modelo que se caracteriza por su excelencia en la Prestación de Servicios, Ética Empresarial, Profesionalismo y un enfoque creativo para los clientes.</p>
                     <p>EQUIPOS HIDRAULICOS SAS, es una empresa que ofrece servicios en diferentes áreas, principalmente en instalación, reparación y mantenimiento de bombas para agua, lavado y desinfección de tanques de suministros, limpieza de pozos de aguas lluvias y negras, entre otros con principios fundamentos en la Calidad y la Innovación que permite generar un estado de mejoramiento continuo a nuestros clientes.</p>
@@ -202,15 +202,7 @@
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/retina-1.1.0.js"></script>
-        <script src="assets/js/jquery.hoverdir.js"></script>
-        <script src="assets/js/jquery.hoverex.min.js"></script>
-        <script src="assets/js/jquery.prettyPhoto.js"></script>
-        <script src="assets/js/jquery.isotope.min.js"></script>
-        <script src="assets/js/custom.js"></script>
-
+        <?php include_once 'templates/js.php'; ?>
 
     </body>
 </html>
