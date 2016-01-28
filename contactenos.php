@@ -12,16 +12,12 @@
         <div id="blue">
             <div class="container">
                 <div class="row">
-                    <h3>Contact.</h3>
+                    <h3>Contactenos.</h3>
                 </div><!-- /row -->
             </div> <!-- /container -->
         </div><!-- /blue -->
 
-        <!-- *****************************************************************************************************************
-         CONTACT WRAP
-         ***************************************************************************************************************** -->
 
-        <div id="contactwrap"></div>
 
         <!-- *****************************************************************************************************************
          CONTACT FORMS
@@ -36,15 +32,15 @@
                     <form role="form">
                         <div class="form-group">
                             <label for="InputName1">Nombre</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1">
+                            <input type="text" class="form-control" id="exampleInputEmail1" autocomplete="off">
                         </div>
                         <div class="form-group">
                             <label for="InputEmail1">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1">
+                            <input type="email" class="form-control" id="exampleInputEmail1" autocomplete="off">
                         </div>
                         <div class="form-group">
                             <label for="InputSubject1">Tema - Asunto</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1">
+                            <input type="text" class="form-control" id="exampleInputEmail1" autocomplete="off">
                         </div>
                         <div class="form-group">
                             <label for="message1">Mensaje</label>

@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.php">
-                <img src="assets/img/logo4.png" class="img-responsive" style="max-width: 170px; margin-top: -22px">
+                <img src="assets/img/logo4.png" class="img-responsive" style="max-width: 150px; margin-top: -24px">
             </a>
         </div>
         <div class="navbar-collapse collapse navbar-right">
@@ -29,7 +29,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">CLIENTES <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="login.php">INICIAR SESION</a></li>
-                        <li><a href="single-post.html">REGISTRARSE</a></li>
+                        <li><a href="registro.php">REGISTRARSE</a></li>
                     </ul>
                 </li>
             </ul>
