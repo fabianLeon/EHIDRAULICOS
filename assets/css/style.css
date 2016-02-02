@@ -35,6 +35,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
+h4{
+   text-align: center;
+}
 p { 
 	padding: 0; 
 	margin-bottom: 12px; 
@@ -44,6 +47,7 @@ p {
 	line-height: 24px;
 	color: #384452; 
 	margin-top: 10px; 
+        text-align: justify;
 }
 
 img {

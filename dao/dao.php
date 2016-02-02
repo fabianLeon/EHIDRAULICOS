@@ -62,6 +62,14 @@ Class dao {
         }
     }
 
+    function transformarResultado2($result) {
+        $res = array();
+        while ($row = mysql_fetch_array($result)) {
+            $res[count($res)] = $row;
+        }
+        return $res;
+    }
+
     function strtoupper_utf8($s) {
         $s = utf8_decode($s);
         //$s = strtoupper($s);

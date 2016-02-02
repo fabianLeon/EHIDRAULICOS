@@ -24,24 +24,40 @@ class daoServicio {
     }
 
     function eliminarServicio($id) {
+        
     }
 
     function editarServicio($id, $descripciones, $titulo) {
+        
     }
-    
+
     function getDescripciones($id) {
         $sql = "SELECT n_path_imagen, n_titulo, n_descripcion "
-             . "FROM descripcion "
-             . "WHERE k_servicio = $id ";
+                . "FROM descripcion "
+                . "WHERE k_servicio = " . $id . " order by orden;";
+        //echo $sql;
+        $result = $this->database->ejecutarConsulta($sql);
+        return ($this->database->transformarResultado2($result));
+    }
+
+    function getServicio($id) {
+        $sql = "SELECT n_titulo "
+                . "FROM servicio "
+                . "WHERE k_servicio = $id ;";
+        //echo $sql;
         $result = $this->database->ejecutarConsulta($sql);
         return ($this->database->transformarResultado($result));
     }
-    function getServicio($id) {
-        $sql = "SELECT n_titulo"
-             . "FROM descripcion "
-             . "WHERE k_servicio = $id ";
+
+    function getServicios($limite) {
+        if ($limite > 0) {
+            $sql = "SELECT * FROM servicio LIMIT $limite;";
+        } else {
+            $sql = "SELECT * FROM servicio;";
+        }
+        //echo $sql;
         $result = $this->database->ejecutarConsulta($sql);
-        return ($this->database->transformarResultado($result));
+        return ($this->database->transformarResultado2($result));
     }
 
 }
