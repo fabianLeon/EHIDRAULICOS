@@ -62,6 +62,12 @@ Class dao {
         }
     }
 
+    function strtoupper_utf8($s) {
+        $s = utf8_decode($s);
+        //$s = strtoupper($s);
+        $s = utf8_encode($s);
+        return $s;
+    }
 
     /**
      * almacena en la base datos de acuerdo a los parametros
@@ -86,11 +92,9 @@ Class dao {
         $temp = substr($temp, 0, strlen($temp) - 1);
         $tempCampos = substr($tempCampos, 0, strlen($tempCampos) - 1);
         $sql = "INSERT INTO " . $tabla . "(" . $tempCampos . ") VALUES (" . $temp . ")";
-        echo $sql."<hr>";
+        echo $sql . "<hr>";
         return $this->ejecutarConsulta($sql);
     }
-
-
 
     /**
      * borra registros de la base datos de acuerdo a los parametros
@@ -132,6 +136,7 @@ Class dao {
     public function cerrarConexion() {
         mysql_close($this->link);
     }
+
 }
 
 ?>
